@@ -14,7 +14,7 @@ body{
     min-height: 100vh;
     background-color: #333;
     color: white;
-    gap: 150px;
+    gap: 50px;
 }
 
 #header{
@@ -86,7 +86,7 @@ body{
 #recipe-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 100px;
 }
 
 .recipe-card{
@@ -101,6 +101,8 @@ body{
     align-items: center;
     padding: 20px;
     gap: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 .recipe-card:hover{
@@ -109,17 +111,32 @@ body{
 
 .recipe-card img{
     width: 100%;
-    height: 80%;
+    height: 90%;
     border-radius: 10px;
 }
 
 .recipe-card h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 10px 0;
 }
 
 .recipe-card p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px ;
+    display: none;
+}
+
+
+.popover{
+    width: 75%;
+    height: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
