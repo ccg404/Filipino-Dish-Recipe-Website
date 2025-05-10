@@ -81,62 +81,143 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #recipe-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 50px;
 }
 
 .recipe-card{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s;
     color: black;
     display: flex;
+    align-items: left;
+    justify-content: left;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 5px;
     width: 100%;
-    height: 100%;
+    font-family: var(--font);
 }
 
 .recipe-card:hover{
     transform: scale(1.05);
 }
 
-.recipe-card img{
-    width: 100%;
-    height: 90%;
-    border-radius: 10px;
-}
-
 .recipe-card h2{
-    font-size: 2rem;
-    margin: 10px 0;
+    font-size: 1.5rem;
+    margin: 20px 20px;
 }
 
 .recipe-card p{
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 20px ;
-    display: none;
+    font-size: 1rem;
+    margin: 0 20px 20px;
+    text-align: left;
 }
 
+.recipe-button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 20px 20px;
+}
 
-.popover{
-    width: 75%;
-    height: 50%;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/*Recipe Images*/
+#recipe-img1{
+    background-image: url("https://www.maggi.ph/sites/default/files/srh_recipes/41d16b3eb7ce08aba9e9114f304f5d87.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img2{
+    background-image: url("https://www.maggi.ph/sites/default/files/srh_recipes/442ce059c4c490e1ab61cdaef9c98511.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img3{
+    background-image: url("https://panlasangpinoy.com/wp-content/uploads/2019/03/Pancit-Canton-Recipe-Panlasang-Pinoy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img4{
+    background-image: url("https://d1k571r5p7i4n1.cloudfront.net/c.5876/large/Lechon_in_Cebu.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img5{
+    background-image: url("https://kanamit.com.ph/cdn/shop/files/IMG_8406.jpg?v=1690875110&width=1445");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img6{
+    background-image: url("https://pinchofyum.com/wp-content/uploads/2013/01/Banana-Lumpia-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img7{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/1048Bibingka_Puto_bumbong_making_Philippines_04.jpg/1200px-1048Bibingka_Puto_bumbong_making_Philippines_04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img8{
+    background-image: url("https://assets.unileversolutions.com/recipes-v2/110738.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img9{
+    background-image: url("https://www.meatsandsausages.com/public/images/sausage-recipes/longanisa-vigan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+#recipe-img10{
+    background-image: url("https://media.istockphoto.com/id/1085004110/photo/empanada-dumplings-stuffed-with-meat-and-vegetable.jpg?s=612x612&w=0&k=20&c=ovUVMeFiqke4Q6KVAbJqhXkqMSoXdPjIbMWtwlQF_R8=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 0;
 }
