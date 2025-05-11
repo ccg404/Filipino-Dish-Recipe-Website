@@ -19,6 +19,8 @@
       <ul id="nav-list">
         <li><a href="##">Home</a></li>
         <li><a href="##">Contact Us</a></li>
+        <li><a href="##">About Us</a></li>
+        <li><a href="##">Recipes</a></li>
       </ul>
     </nav>
   </header>
@@ -120,6 +122,22 @@
         </div>
     </div>
   </main>
+  <section id="add-recipe">
+    <div>
+      <h2>Share Your Favorite Recipe</h2>
+    </div>
+    <form action="post" id="recipe-form">
+      <div id="form-group">
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" name="recipe-name" required />
+        <label for="recipe-ingredients">Ingredients:</label>
+        <textarea name="recipe-ingredients" id="recipe-ingredients" autocorrect="on" placeholder="List the ingredients separated by commas"></textarea>
+      </div>
+      <div id="button-group">
+        <button id="submitBtn">Submit Recipe</button>
+      </div>
+    </form>
+  </section>
   <footer>
     <div id="footer-content">
       <p>&copy; 2023 Filipino Dishes. All rights reserved.</p>
